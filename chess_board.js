@@ -10,8 +10,8 @@ for (var n=0; n<8; n++) {
   console.log(output);
 }
 
-
-var size = 8;
+// chess board how it should be
+var size = 4;
 chessBoard = "";
 
 for (x=0;x<size;x++) {
@@ -22,8 +22,7 @@ for (x=0;x<size;x++) {
       chessBoard += "#";
     }
   }
+  chessBoard += "\n";
 } 
-
-chessBoard += "\n";
 
 console.log(chessBoard);
