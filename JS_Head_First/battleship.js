@@ -2,6 +2,7 @@ var randomLoc = Math.floor(Math.random() * 5);
 var location1 = randomLoc;
 var location2 = location1 + 1;
 var location3 = location2 + 1;
+var ship1 = [location1, location2, location3];
 
 var guess;
 var hits = 0;
@@ -16,7 +17,8 @@ while (isSunk == false) {
   } else {
     guesses = guesses + 1;
 
-    if (guess == location1 || guess == location2 || guess == location3) {
+    // if (guess == location1 || guess == location2 || guess == location3) {
+    if (ship1.indexOf(guess) > -1) {
       hits = hits + 1;
       alert("HIT!");
       if (hits == 3) {
