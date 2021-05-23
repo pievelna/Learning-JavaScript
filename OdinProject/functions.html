@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic HTML skeleton</title>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+  <h1>Curabitur est gravida et libero vitae dictum.</h1>
+  <script>
+    // Your JavaScript goes here!
+    function add7(num) {
+      if (!isNaN(num)) {
+        return num + 7;
+      }
+    }
+
+    function multiply(a, b) {
+      if (!isNaN(a) && !isNaN(b)) {
+        return a * b;
+      }
+    }
+
+    function capitalize(myString1) {
+      return myString1[0].toUpperCase() + myString1.substring(1).toLowerCase();
+    }
+
+    function lastLetter(myString2) {
+      return myString2.charAt(myString2.length - 1);
+    }
+
+  </script>
+</body>
+</html>
