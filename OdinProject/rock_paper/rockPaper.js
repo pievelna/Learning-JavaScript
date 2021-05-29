@@ -42,13 +42,10 @@ function userPlay() {
 function playRound(playerSelection,computerSelection) {
   console.log(playerSelection,computerSelection);
   if (playerSelection && computerSelection) {
-    const tie = 'It is a tie!';
+    let roundResult = 'It is a tie!';
     const playerWon = 'You won! ' + playerSelection + ' beats ' + computerSelection + '.';
     const computerWon = 'The computer won! ' + computerSelection + ' beats ' + playerSelection + '.';
-    let roundResult;
-    if (playerSelection === computerSelection) {
-      roundResult = tie;
-    } else {
+    if (playerSelection !== computerSelection) {
       if (playerSelection !== 'rock') {
         if (computerSelection === 'scissors') {
           roundResult = computerWon;
