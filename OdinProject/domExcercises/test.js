@@ -32,3 +32,13 @@ container.appendChild(blueH);
 container.appendChild(anotherDiv);
 anotherDiv.appendChild(hInDiv);
 anotherDiv.appendChild(pInDiv);
+
+// button JS
+const btn = document.querySelector('#btn');
+btn.onclick = () => alert("Hello world!");
+
+// button JS2
+const btn2 = document.querySelector('#btn2');
+btn2.addEventListener('click', () => {
+  alert("Hello World!");
+});
