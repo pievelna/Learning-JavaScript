@@ -95,4 +95,4 @@ function game() {
   alert(finalResult(playerScore,computerScore));
 }
 
-// game();
+game();
