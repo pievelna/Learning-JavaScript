@@ -20,6 +20,7 @@
   font-family: roboto;
   flex: 1 1 auto;
   max-width: 100px;
+  min-width: max-content;
   max-height: 20px;
   text-align: center;
 }
@@ -38,7 +39,7 @@
 }
 
 .button:hover {
-  background-color: darkgrey;
+  background-color: rgb(130, 194, 249);
 }
 
 #quit:hover {
