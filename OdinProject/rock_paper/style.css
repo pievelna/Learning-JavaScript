@@ -46,6 +46,10 @@
   background-color: lightcoral;
 }
 
+#start:hover {
+  background-color: lightgreen;
+}
+
 .gamemenu {
   display: flex;
   flex-direction: column;
